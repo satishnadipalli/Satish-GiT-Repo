@@ -1,0 +1,142 @@
+body{
+    display: flex;
+    overflow: hidden;
+    background: url('images/todo.jpg');
+    
+}
+.container{
+    height: 100vh;
+    border: 1px solid rgb(219, 219, 219);
+    background-color: whitesmoke;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.input-holder{
+    height: 70px;
+    width: 400px;
+    padding-left: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    box-shadow: 1px 1px 2px 3px rgb(217, 217, 217);
+}
+.div-element{
+    padding-top: 20px;
+    margin-left: 6px;
+    padding-bottom: 15px ;
+}
+
+.calender-selector{
+    height: 70px;
+    margin-left: 10px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 1px 1px 2px 3px rgb(217, 217, 217);
+}
+.Add{
+    height: 70px;
+    width: 100px;
+    margin-left: 10px;
+    background-color: rgb(59, 222, 59);
+    border: none;
+    color: white;
+    font-size: 23px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.display-result{
+    display: grid;
+    grid-template-columns: 400px 180px 130px;
+    row-gap: 20px;
+    padding-left: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    
+}
+.display-result div{
+    padding: 8px 20px;
+    display: flex;
+    align-items:center;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.js-button{
+    padding: 4px 9px;
+    margin-left: 15px;
+    background-color: rgb(255, 89, 0);
+    border: none;
+    color: white;
+    font-size: 23px;
+    border-radius: 5px;
+
+}
+.header{
+    height: 70px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgb(237, 237, 237);
+}
+.addtasks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    font-family: cursive;
+    font-size: 17px;
+    color: black;
+    
+}
+
+.icon{
+    position: absolute;
+    right: 0;
+    top: 5;
+
+
+}
+.buttons{
+    background-color: rgb(255, 230, 234);
+    padding: 10px;
+    border-top: 2px solid pink;
+    border-left: 2px solid pink;
+    border-right: 2px solid pink;
+    border-bottom: none;
+}
+.nav-button{
+    display:none;
+}
+.hide{
+    position: absolute;
+    height: 200px;
+    width: 150px;
+    border: 2px solid pink;
+    right: 0;
+    top: 28;
+    background-color:  rgb(255, 230, 234);
+    color: black;
+    float: right;
+}
+.hide a{
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    background-color: rgb(255, 230, 234);
+    color: black;
+}
+.hide a:hover{
+    background-color: rgb(213, 149, 160);
+    border: 2px solid rgb(166, 81, 95);
+}
+
+
