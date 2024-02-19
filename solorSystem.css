@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.container {
+    position: relative;
+    height: 40em;
+    width: 40em;
+    overflow: hidden;
+}
+
+.sun {
+    position: absolute;
+    height: 10em;
+    width: 10em;
+    border-radius: 50%;
+    background-color: rgba(255, 132, 0, 0.775);
+    border: 3px solid red;
+    box-shadow: 0 0 3em whitesmoke;
+    left: 15em;
+    top: 15em;
+}
+
+.earth, .moon {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.earth {
+    height: 30em;
+    width: 30em;
+    top: 5em;
+    left: 5em;
+    border-style: solid;
+    border-color: white transparent;
+    border-width: 0.1em 0 0 0.1em;
+    border-radius: 50%;
+    animation-name: spin;
+    animation-timing-function: linear;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+.earth::before {
+    content: '';
+    position: absolute;
+    top: 1.8em;
+    left: 1.8em;
+    height: 6em;
+    width: 6em;
+    border-radius: 50%;
+    background-color: blue;
+}
+
+.moon {
+    top: -0.8em;
+    left: -0.7em;
+    height: 11em;
+    width: 11em;
+    border-style: solid;
+    border-color: white transparent;
+    border-width: 0.1em 0 0 0.1em;
+    border-radius: 50%;
+    animation-name: spin;
+    animation-timing-function: linear;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+.moon::before {
+    content: '';
+    height: 1.8em;
+    position: absolute;
+    top: 0.1em;
+    left: 1.3em;
+    width: 1.8em;
+    background-color: silver;
+    box-shadow: 0 0 ;
+    border-radius: 50%;
+    box-shadow: 0 0 2em whitesmoke;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(-0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
